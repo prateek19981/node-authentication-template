@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <!--====== Title ======-->
+    <title>Welcome</title>
+    
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+        
+    <!--====== Magnific Popup CSS ======-->
+    <link rel="stylesheet" href="css/landingpage_css/magnific-popup.css">
+        
+    <!--====== Slick CSS ======-->
+    <link rel="stylesheet" href="css/landingpage_css/slick.css">
+        
+    <!--====== Line Icons CSS ======-->
+    <link rel="stylesheet" href="css/landingpage_css/LineIcons.css">
+        
+    <!--====== Bootstrap CSS ======-->
+    <link rel="stylesheet" href="css/landingpage_css/bootstrap.min.css">
+    
+    <!--====== Default CSS ======-->
+    <link rel="stylesheet" href="css/landingpage_css/default.css">
+    
+    <!--====== Style CSS ======-->
+    <link rel="stylesheet" href="css/landingpage_css/style.css">
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+      <!-- Font special for pages-->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    
+     <!-- Vendor CSS-->
+     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+      
+  
+    <!-- font font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- noty cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+    
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    
+     <%- body %>
+     
+
+     
+
+
+
+
+
+    <!--====== Jquery js ======-->
+    <script src="js/landingpage_js//vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/landingpage_js/vendor/modernizr-3.7.1.min.js"></script>
+    
+    <!--====== Bootstrap js ======-->
+    <script src="js/landingpage_js/popper.min.js"></script>
+    <script src="js/landingpage_js/bootstrap.min.js"></script>
+    
+    <!--====== Slick js ======-->
+    <script src="js/landingpage_js/slick.min.js"></script>
+    
+    <!--====== Magnific Popup js ======-->
+    <script src="js/landingpage_js/jquery.magnific-popup.min.js"></script>
+    
+    <!--====== Ajax Contact js ======-->
+    <script src="js/landingpage_js/ajax-contact.js"></script>
+    
+    <!--====== Isotope js ======-->
+    <script src="js/landingpage_jsimagesloaded.pkgd.min.js"></script>
+    <script src="js/landingpage_js/isotope.pkgd.min.js"></script>
+    
+    <!--====== Scrolling Nav js ======-->
+    <script src="js/landingpage_js/jquery.easing.min.js"></script>
+    <script src="js/landingpage_js/scrolling-nav.js"></script>
+    
+    <!--====== Main js ======-->
+    <script src="js/landingpage_js/main.js"></script>
+
+        <!-- custom js -->
+   <script src="js/global.js"></script>
+   
+  
+    <% if (flash.success&&flash.success.length>0) {%>
+        <script>
+            new Noty({
+            theme:'relax',
+            text: '<%=flash.success%>',
+            type:"success",
+            layout:"topRight",
+            timeout:1500
+            }).show()
+        </script>
+  
+    <%}%>
+    
+    <% if(flash.error&&flash.error.length>0){%>
+        <script>
+            new Noty({
+            theme:'relax',
+            text: '<%=flash.error%>',
+            type:"error",
+            layout:"topRight",
+            timeout:1500
+            }).show()
+        </script>
+        
+        
+        
+        
+    <%}%>
+
+
+
+ 
+
+ 
+
+
+    
+</body>
+
+</html>

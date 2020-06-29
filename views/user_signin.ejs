@@ -1,0 +1,43 @@
+
+
+<body>
+    
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Sign In</h2>
+                    <h4>New user?</h2>
+                    <a href="/user/signup" style="text-decoration: none;"><h4>Sign up</h4></a>
+                    <form method="POST" action="/user/create-session">
+                        <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Password</label>
+                                    <input class="input--style-4" type="text" name="password" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <a href="/user/auth/google"><p>Signin using google</p></a>
+                                </div>
+                            </div>
+                        
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" style="transform: translate(-170px);" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+</body>
+
